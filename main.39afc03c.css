@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0; }
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 71px 30px;
+  min-width: 500px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 30px 35px 155px; }
+  @media (min-width: 1000px) {
+    .people {
+      grid-template-columns: repeat(4, 200px);
+      padding-inline: 55px; } }
+  .people__person {
+    width: 200px;
+    transition: transform 1s ease; }
+    .people__person:hover {
+      border-radius: 10px;
+      background-color: #eeeeee;
+      transform: scale(1.2); }
+      .people__person:hover .people__photo {
+        border-radius: 60px; }
+  .people__photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 8px;
+    transition: border-radius 1s ease; }
+    .people__photo img {
+      border-radius: 50%;
+      width: 100%; }
+  .people__rank {
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    top: 84px;
+    right: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: darkred; }
+  .people__details {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .people__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: darkslategray; }
+  .people__extra {
+    display: none; }
+
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
